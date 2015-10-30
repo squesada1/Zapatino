@@ -1,0 +1,49 @@
+
+    .navbar{
+    font-family: 'Lobster', cursive;
+    margin-bottom:0;
+    font-size:13pt;
+    }
+    
+    .jumbotron{
+    	background:#FF8000;
+    	color:#fff;
+    	padding:10px 0;
+    	margin-bottom:0.2em;
+    }
+   
+    h1, h2, h3, h4 {
+        font-family: 'Lobster', cursive;
+    }
+    
+
+    /*PROPIEDADES DEL MENU*/
+    
+	.list-group.panel > .list-group-item {
+  	font-family: 'Lobster', cursive;
+  	border-bottom-right-radius: 2px;
+  	border-bottom-left-radius: 2px;
+  	background:#3B3131;
+  	color:#fff;
+  	font-size:13pt;	
+	}
+	
+	.list-group-submenu {
+  	margin-left:20px;
+	}
+	
+	p{	
+	font-size:13pt;
+	color-font:black;
+	background:#FFF;
+	text-align: center;
+	“background-color: rgb(0,0,255); opacity: 0.8;”
+	}
+	
+	.nombre_usuario{
+	font-size:9pt;
+	color-font:black;
+	text-align: center;
+	}
+	
+	

@@ -1,0 +1,43 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+    <html>
+        <head>
+        
+            <title>{%block title%}{% endblock%}</title>
+            <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+            <link rel="stylesheet" href="{% static "bootstrap/css/bootstrap.min.css" %}">
+        	<link rel="stylesheet" href="{% static "css/estilos.css" %}">
+        	<link rel="stylesheet" href="{% static "js/main.js" %}">
+        	<link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        </head>
+        
+ <style>
+ body{
+ background-image: url('{% static "images/fondo3.jpg" %}');
+ background-repeat: no-repeat center center ficed; 
+ -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+ } 
+ </style>  
+ 
+<body>
+ <!--NAVBAR-->
+{% include "zapatino_templates/navbar.html" %}
+ 
+ <!--JUMBOTRON-->
+{% include "zapatino_templates/jumbotron.html" %}
+
+{%block content%}{% endblock%} 
+   
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="{% static "bootstrap/js/jquery.min.js" %}"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="{% static "bootstrap/js/bootstrap.min.js"%}"></script>
+</body>
+</html>

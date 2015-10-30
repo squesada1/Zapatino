@@ -1,0 +1,56 @@
+<header>
+    <!-- Navegacion -->
+	    <nav class="navbar navbar-inverse navbar-static-top role-navigation" >
+        <div class="container">
+           <!-- btn para dispositivos moviles -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-zapa">
+                    <span class="sr-only">Desplegar/ Ocultar Menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+              
+            </div>
+            
+ 
+
+            <!-- INICIA MENU -->
+        <div class="collapse navbar-collapse" id="navegacion-zapa">
+        	<ul class="nav navbar-nav">
+            	<li class ="active">
+                <a href="{% url "formulario_index" %}">INICIO </a>
+                </li>
+                <li>
+                <a href= "{% url "formulario_empresa" %}">EMPRESA</a>
+                </li>
+                <li>
+                <a href="#">COMO COMPRAR</a>
+                </li>
+                <li>
+                <a href="#">PAGOS Y ENVIOS</a>
+                </li>
+                <li>
+                <a href="#">UBICACION</a>
+                </li>
+                <li>
+                <a href="#">CONTACTO</a>
+                </li>
+                <li>
+                <a href="{% url "login" %}">LOGIN</a>
+                </li>
+			</ul>
+		</div>
+		
+<!-- /.navbar-collapse -->
+	</div>
+<p clas="nombre_usuario">
+{% if user.is_authenticated %}
+Bienvenido {{user.username|capfirst}}
+<a href="{% url "logout" %}">  Salir</a>
+{% endif %}	
+</p>
+
+<!-- /.container -->
+    </nav>
+</header>
